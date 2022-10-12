@@ -36,6 +36,16 @@ This project was created based on the need to have hands-on experience in creati
 
 `Example: User A sends to User B 100 EUR. But User B wants to receive that in USD. Therefore, User A has -100EUR after that transaction and User B 113 USD, depending on the exchange rate. `
 
+## Languages
+
+* HTML5 
+* CSS
+* Bootstrap 4
+* JavaScript/jQuery
+* Python
+* Flask
+* PostgreSQL
+
 ## Wise Flask (MVP) Application Development Procedures
 
 List the appropriate steps to successfully run this application on a local environment.
