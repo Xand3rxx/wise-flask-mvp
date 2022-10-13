@@ -46,6 +46,16 @@ This project was created based on the need to have hands-on experience in creati
 * Flask
 * PostgreSQL
 
+## Git Instructions
+When you start developing, commit all of your work on a topic branch:
+* before merging with the main branch
+* make sure to give the topic branch clear, descriptive name
+  
+As a general best practice for writing commits:
+* make frequent, smaller commits
+* use clear and descriptive commit messages
+* update the README file, if necessary
+
 ## Wise Flask (MVP) Application Development Procedures
 
 List the appropriate steps to successfully run this application on a local environment.
