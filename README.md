@@ -71,6 +71,15 @@ Our development stack will include the following:
       └── pages
   ```
 
+## Templating
+
+A bootstrap 4(`unify-admin-template`) template has been provided for fast designs, if you choose to use a different template or you want create all of your pages from scratch, please feel free to do so.
+
+- Unzip the `unify-admin-template.zip` file.
+- Rename the zipped folder from `design-1` to `templates`. By default, Jinja2 will automatically locate HTML documents from the templates folder.
+- Delete all HTML documents from the templates folder, excluding `login.html`, `signup.html`, `index-2.html`, `error404.html`, and `error505.html`. These files will help you in designing the pages as stated in the [About Wise Flask (MVP)](#about-wise-flask-mvp) section, but if you find other pages useful for your own design concepts, go ahead and use them.
+- Create a new folder titled `static` and move the folders in the templates folder to it. [Review the project structure](#project-files-structure).
+  
 ## Git Instructions
 
 When you start developing, commit all of your work on a topic branch:
@@ -103,15 +112,6 @@ Practical Example:
 - User A sends to User B 100 EUR.
 - But User B wants to receive that in USD. Therefore, User A has -100 EUR after that transaction.
 - Finally, User B is credited with 113 USD, depending on the exchange rate.
-
-## Templating
-
-A bootstrap 4(`unify-admin-template`) template has been provided for fast designs, if you choose to use a different template or you want create all of your pages from scratch, please feel free to do so.
-
-- Unzip the `unify-admin-template.zip` file.
-- Rename the zipped folder from `design-1` to `templates`. By default, Jinja2 will automatically locate HTML documents from the templates folder.
-- Delete all HTML documents from the templates folder, excluding `login.html`, `signup.html`, `index-2.html`, `error404.html`, and `error505.html`. These files will help you in designing the pages as stated in the [About Wise Flask (MVP)](#about-wise-flask-mvp) section, but if you find other pages useful for your own design concepts, go ahead and use them.
-- Create a new folder titled `static` and move the folders in the templates folder to it. [Review the project structure](#project-files-structure).
 
 ## Wise Flask (MVP) Application Development Procedures
 
