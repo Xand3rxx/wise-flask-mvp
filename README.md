@@ -1,6 +1,17 @@
 # <img alt="Wise Flask (MVP) Logo" src="https://wise.com/public-resources/assets/logos/wise/brand_logo.svg"> Wise Flask (MVP)
 
-In order to gain practical experience building web apps from scratch, this project was developed. The task is to develop a web application that allows users to send virtual money to each other in their choice of currencies (USD, EUR, or local currency).
+In order to gain practical experience building web applications from scratch, this project was developed. The task is to develop a web application that allows users to send virtual money to each other in their choice of currencies (USD, EUR, or local currency).
+
+
+## Project Benefits
+This project should give us a good understanding of:
+
+- How well you can go from text to code, from requirements to product.
+- How well you can execute on predefined requirements.
+- How well do you pay attention to detail so we can rely on you to execute the work end to end.
+- How creatively you execute on vague requirements (that haven't been defined in great detail).
+- How well can you hack, organize, document, test, structure, and write your code.
+- How well you can leverage existing things to build this app fast.
 
 ## About Wise Flask (MVP)
 
@@ -11,7 +22,7 @@ In order to gain practical experience building web apps from scratch, this proje
 3. A dashboard page, where transactions will be listed.
 4. A transaction page.
 5. API integration to get current exchange rate from [Free Currency Converter API](https://www.currencyconverterapi.com/) or any other free currency converter or a hand-coded list of exchange rates.
-6. A method to record failed transactions following the ACID database transaction principle.
+6. A method to record failed transactions following the `ACID` database transaction principle.
 7. A feature to refund the dollar account once it is completely exhausted.
 
 ## Features
@@ -39,13 +50,14 @@ Our development stack will include the following:
 ## Project Files Structure
 
   ```sh
-  ├── .env *** To store consume secrets from a local environment
-  ├── images *** Folder to store screenshots of the finished project.
+  ├── .env => To store consume secrets from a local environment
+  ├── images => Folder to store screenshots of the finished project.
   ├── README.md
-  ├── app.py *** the main driver of the app. Includes your SQLAlchemy models. `python app.py` to run after installing dependencies
-  ├── config.py *** Database URLs, CSRF generation, etc
-  ├── forms.py *** Your forms
-  ├── requirements.txt *** The dependencies we need to install with `pip3 install -r requirements.txt`
+  ├── app.py => the main driver of the app. Includes your SQLAlchemy models. `python app.py` to run after installing dependencies
+  ├── config.py => Database URLs, CSRF generation, etc
+  ├── forms.py => Your forms
+  ├── models.py => To manage your database tables and migrations
+  ├── requirements.txt => The dependencies we need to install with `pip3 install -r requirements.txt`
   ├── static
   │   ├── css 
   │   ├── fonts
