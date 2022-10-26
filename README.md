@@ -18,20 +18,46 @@ In order to gain practical experience building web apps from scratch, this proje
 
 - Money can be sent/converted into any of the three currencies to be sent to another user.
 - Money can be sent/converted to any and every user who is registered on the app.
-- The user to send the money to can be chosen from an input-dropdown list which shows all users if clicked on. (Tip: Create at least two users as a seed.)
+- The user to send the money to can be chosen from an input-dropdown list which shows all users if clicked on. (Tip: Create at least two users as dummy data.)
 - A user cannot have a negative balance. All users start with 1000 USD worth of money given via an initial transaction when you create them.
 - All users start with USD as their native currency but can receive EUR and your specified local currency.
 - All database tables must have the `created_at` timestamp, which should be populated automatically.
 
-## Languages
+## Development Stacks
+Our development stack will include the following:
 
 - HTML5
 - CSS
 - Bootstrap 4
 - JavaScript/jQuery
-- Python
+- Python3
 - Flask
 - PostgreSQL
+- Venv(optional)
+- Docker(optional)
+
+## Project Files Structure
+
+  ```sh
+  ├── .env *** To store consume secrets from a local environment
+  ├── images *** Folder to store screenshots of the finished project.
+  ├── README.md
+  ├── app.py *** the main driver of the app. Includes your SQLAlchemy models. `python app.py` to run after installing dependencies
+  ├── config.py *** Database URLs, CSRF generation, etc
+  ├── forms.py *** Your forms
+  ├── requirements.txt *** The dependencies we need to install with `pip3 install -r requirements.txt`
+  ├── static
+  │   ├── css 
+  │   ├── fonts
+  │   ├── img
+  │   ├── js
+  │   └── vendor
+  └── templates
+      ├── errors
+      ├── forms
+      ├── layouts
+      └── pages
+  ```
 
 ## Git Instructions
 
@@ -58,13 +84,22 @@ As a general best practice for writing commits:
 - A user can select the target recipient and currency.
 - Check if a transaction is possible, by validating if the user has enough funds in his/her selected source currency.
 - Be smart, use dependencies, plugins to speed up your development process. Avoid DRY.
-- List the appropriate steps to successfully run this application on a local environment in the `Wise Flask (MVP) Application Development Procedures` section below.
+- List the appropriate steps to successfully run this application on a local environment in the [Wise Flask (MVP) Application Development Procedures](#wise-flask-mvp-application-development-procedures) section below.
 
 Practical Example:
 
 - User A sends to User B 100 EUR.
 - But User B wants to receive that in USD. Therefore, User A has -100 EUR after that transaction.
 - Finally, User B is credited with 113 USD, depending on the exchange rate.
+
+## Templating
+
+A bootstrap 4(`unify-admin-template`) template has been provided for fast designs, if you choose to use a different template or you want create all of your pages from scratch, please feel free to do so.
+
+- Unzip the `unify-admin-template.zip` file.
+- Rename the zipped folder from `design-1` to `templates`. By default, Jinja2 will automatically locate HTML documents from the templates folder.
+- Delete all HTML documents from the templates folder, excluding `login.html`, `signup.html`, `index-2.html`, `error404.html`, and `error505.html`. These files will help you in designing the pages as stated in the [About Wise Flask (MVP)](#about-wise-flask-mvp) section, but if you find other pages useful for your own design concepts, go ahead and use them.
+- Create a new folder titled `static` and move the folders in the templates folder to it. [Review the project structure](#project-files-structure).
 
 ## Wise Flask (MVP) Application Development Procedures
 
